@@ -86,7 +86,7 @@ class _ProductDetailPageState extends ConsumerState<ProductDetailPage> {
     final isFavorite = ref.watch(isFavoriteProvider(widget.product.id));
     final isInCart = ref.watch(isInCartProvider(widget.product.id));
     final reviews = ref.watch(productReviewsProvider(widget.product.id));
-    final currencyFormat = NumberFormat.currency(locale: 'ja_JP', symbol: '¥', decimalDigits: 0);
+    final currencyFormat = NumberFormat.currency(locale: 'en_US', symbol: '\$', decimalDigits: 0);
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -330,7 +330,6 @@ class _ProductDetailPageState extends ConsumerState<ProductDetailPage> {
                     ],
                   ),
                   const SizedBox(height: 20),
-                  
                   const Divider(color: AppColors.divider, height: 1),
                   const SizedBox(height: 20),
                   
@@ -563,7 +562,7 @@ class _ProductDetailPageState extends ConsumerState<ProductDetailPage> {
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
+                      borderRadius: BorderRadius.circular(30),
                     ),
                     elevation: 0,
                   ),

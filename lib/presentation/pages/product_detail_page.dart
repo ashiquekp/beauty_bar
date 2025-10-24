@@ -1,3 +1,4 @@
+// ignore_for_file: deprecated_member_use, unused_field
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cached_network_image/cached_network_image.dart';
@@ -454,7 +455,7 @@ class _ProductDetailPageState extends ConsumerState<ProductDetailPage> {
                         ),
                       ],
                     ),
-                  )).toList(),
+                  )),
                   const SizedBox(height: 20),
                   
                   const Divider(color: AppColors.divider, height: 1),
@@ -492,7 +493,7 @@ class _ProductDetailPageState extends ConsumerState<ProductDetailPage> {
                         ),
                       ],
                     ),
-                  )).toList(),
+                  )),
                   const SizedBox(height: 20),
                   
                   const Divider(color: AppColors.divider, height: 1),
@@ -529,7 +530,7 @@ class _ProductDetailPageState extends ConsumerState<ProductDetailPage> {
                   const SizedBox(height: 16),
                   ...(_showAllReviews ? reviews : reviews.take(2)).map((review) => 
                     _buildReviewCard(review),
-                  ).toList(),
+                  ),
                   const SizedBox(height: 100), // Space for bottom bar
                 ],
               ),

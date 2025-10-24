@@ -1,3 +1,4 @@
+// ignore_for_file: deprecated_member_use
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/constants/app_colors.dart';
@@ -277,7 +278,7 @@ class _FilterBottomSheetState extends ConsumerState<FilterBottomSheet> {
                         }
                       },
                     );
-                  }).toList(),
+                  }),
                 ],
               ),
             ),

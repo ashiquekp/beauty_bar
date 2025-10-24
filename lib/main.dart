@@ -302,6 +302,7 @@ class PlaceholderPage extends StatelessWidget {
             Icon(
               Icons.construction,
               size: 80,
+              // ignore: deprecated_member_use
               color: AppColors.textLight.withOpacity(0.5),
             ),
             const SizedBox(height: 24),

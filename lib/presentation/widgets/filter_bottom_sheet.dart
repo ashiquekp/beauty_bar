@@ -103,8 +103,8 @@ class _FilterBottomSheetState extends ConsumerState<FilterBottomSheet> {
                     divisions: 100,
                     activeColor: AppColors.primary,
                     labels: RangeLabels(
-                      '¥${_tempFilter.minPrice.toInt()}',
-                      '¥${_tempFilter.maxPrice.toInt()}',
+                      '\$${_tempFilter.minPrice.toInt()}',
+                      '\$${_tempFilter.maxPrice.toInt()}',
                     ),
                     onChanged: (RangeValues values) {
                       setState(() {
@@ -119,14 +119,14 @@ class _FilterBottomSheetState extends ConsumerState<FilterBottomSheet> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        '¥${_tempFilter.minPrice.toInt()}',
+                        '\$${_tempFilter.minPrice.toInt()}',
                         style: const TextStyle(
                           fontSize: 14,
                           color: AppColors.textSecondary,
                         ),
                       ),
                       Text(
-                        '¥${_tempFilter.maxPrice.toInt()}',
+                        '\$${_tempFilter.maxPrice.toInt()}',
                         style: const TextStyle(
                           fontSize: 14,
                           color: AppColors.textSecondary,

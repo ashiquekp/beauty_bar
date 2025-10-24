@@ -64,14 +64,7 @@ class _SearchPageState extends ConsumerState<SearchPage> {
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Colors.white,
-                boxShadow: [
-                  BoxShadow(
-                    color: AppColors.shadow,
-                    blurRadius: 4,
-                    offset: const Offset(0, 2),
-                  ),
-                ],
+                color: AppColors.background,
               ),
               child: Column(
                 children: [

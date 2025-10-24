@@ -219,7 +219,7 @@ class _ProductDetailPageState extends ConsumerState<ProductDetailPage> {
                   
                   // Badges
                   Positioned(
-                    top: 60,
+                    top: 120,
                     left: 16,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
